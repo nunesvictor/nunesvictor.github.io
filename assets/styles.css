@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e2e1e0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main {
+  background-color: white;
+  box-shadow: 10px 5px 5px #ccc;
+  max-width: 1024px;
+  margin: 20 auto;
+  padding: 20px 20px;
+}
+
+.main-table {
+  width: 100%;
+}
+
+.main-table tr,
+td,
+th {
+  border: 1px solid #ccc;
+  padding: 4px 4px;
+}
+
+.main-table .w-10 {
+  width: 10%;
+}
+
+.main-table .w-80 {
+  width: 80%;
+}
+
+.main-table .text-center {
+    text-align: center;
+}
+
+.main-table .text-right {
+  text-align: right;
+}
+
+.btn-group {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.btn-group button {
+  min-width: 200px;
+}
+
+.btn-group button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-group .btn-reset {
+  background-color: crimson;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin: 0 4px;
+  font-weight: 500;
+}
+
+.btn-group .btn-submit {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin: 0 4px;
+  font-weight: 500;
+}
+
+@media (max-width: 960px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,378 @@
+<html>
+  <head>
+    <title>Comanda de Pedidos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <table class="main-table">
+          <thead>
+            <th class="w-80">Pedido</th>
+            <th class="w-10 text-center">Quantidade</th>
+            <th class="w-10 text-center">Preço</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="3" class="text-center">Porções</th>
+            </tr>
+            <tr id="row-porcao-batataf">
+              <td>Batata frita</td>
+              <td class="text-center">
+                <input type="number" name="porcao-batataf" id="qtd-porcao-batataf" data-price="20" min="0" value="0" />
+              </td>
+              <td id="subtotal-porcao-batataf" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-mandiocaf">
+              <td>Mandioquinha frita</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="porcao-mandiocaf"
+                  id="qtd-porcao-mandiocaf"
+                  data-price="20"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-porcao-mandiocaf" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-pasteis">
+              <td>Porção de pastéis</td>
+              <td class="text-center">
+                <input type="number" name="porcao-pasteis" id="qtd-porcao-pasteis" data-price="20" min="0" value="0" />
+              </td>
+              <td id="subtotal-porcao-pasteis" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-calabresa">
+              <td>Porção de Calabresa</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="porcao-calabresa"
+                  id="qtd-porcao-calabresa"
+                  data-price="20"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-porcao-calabresa" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-ftilapia">
+              <td>Filé de Tilápia</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="porcao-ftilapia"
+                  id="qtd-porcao-ftilapia"
+                  data-price="25"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-porcao-ftilapia" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-bbacalhau">
+              <td>Bolinho de bacalhau</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="porcao-bbacalhau"
+                  id="qtd-porcao-bbacalhau"
+                  data-price="25"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-porcao-bbacalhau" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-fpassarinho">
+              <td>Frango a Passarinho</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="porcao-fpassarinho"
+                  id="qtd-porcao-fpassarinho"
+                  data-price="24"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-porcao-fpassarinho" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-porcao-cporco">
+              <td>Costelinha de porco</td>
+              <td class="text-center">
+                <input type="number" name="porcao-cporco" id="qtd-porcao-cporco" data-price="24" min="0" value="0" />
+              </td>
+              <td id="subtotal-porcao-cporco" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr>
+              <th colspan="3">Espetinhos completos</th>
+            </tr>
+            <tr id="row-espetoc-picanha">
+              <td>Picanha</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="espetoc-picanha"
+                  id="qtd-espetoc-picanha"
+                  data-price="25"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-espetoc-picanha" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetoc-cfile">
+              <td>Contra filé</td>
+              <td class="text-center">
+                <input type="number" name="espetoc-cfile" id="qtd-espetoc-cfile" data-price="23" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetoc-cfile" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetoc-fibacon">
+              <td>Filé com bacon</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="espetoc-fibacon"
+                  id="qtd-espetoc-fibacon"
+                  data-price="23"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-espetoc-fibacon" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetoc-cupim">
+              <td>Cupim</td>
+              <td class="text-center">
+                <input type="number" name="espetoc-cupim" id="qtd-espetoc-cupim" data-price="18" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetoc-cupim" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetoc-kafta">
+              <td>Káfta</td>
+              <td class="text-center">
+                <input type="number" name="espetoc-kafta" id="qtd-espetoc-kafta" data-price="16" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetoc-kafta" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetoc-frbacon">
+              <td>Frango com bacon</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="espetoc-frbacon"
+                  id="qtd-espetoc-frbacon"
+                  data-price="16"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-espetoc-frbacon" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetoc-queijo">
+              <td>Queijo</td>
+              <td class="text-center">
+                <input type="number" name="espetoc-queijo" id="qtd-espetoc-queijo" data-price="16" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetoc-queijo" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr>
+              <th colspan="3">Espetinhos simples</th>
+            </tr>
+            <tr id="row-espetos-picanha">
+              <td>Picanha</td>
+              <td class="text-center">
+                <input type="number" name="espetos-picanha" id="qtd-espetos-picanha" data-price="9" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-picanha" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetos-cfile">
+              <td>Contra filé</td>
+              <td class="text-center">
+                <input type="number" name="espetos-cfile" id="qtd-espetos-cfile" data-price="7" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-cfile" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetos-fibacon">
+              <td>Filé com bacon</td>
+              <td class="text-center">
+                <input type="number" name="espetos-fibacon" id="qtd-espetos-fibacon" data-price="8" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-fibacon" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetos-cupim">
+              <td>Cupim</td>
+              <td class="text-center">
+                <input type="number" name="espetos-cupim" id="qtd-espetos-cupim" data-price="6" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-cupim" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetos-kafta">
+              <td>Káfta</td>
+              <td class="text-center">
+                <input type="number" name="espetos-kafta" id="qtd-espetos-kafta" data-price="5" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-kafta" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetos-frbacon">
+              <td>Frango com bacon</td>
+              <td class="text-center">
+                <input type="number" name="espetos-frbacon" id="qtd-espetos-frbacon" data-price="6" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-frbacon" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-espetos-queijo">
+              <td>Queijo</td>
+              <td class="text-center">
+                <input type="number" name="espetos-queijo" id="qtd-espetos-queijo" data-price="6" min="0" value="0" />
+              </td>
+              <td id="subtotal-espetos-queijo" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr>
+              <th colspan="3">Bebidas</th>
+            </tr>
+            <tr id="row-bebida-cbrahma">
+              <td>Chopp Brahma</td>
+              <td class="text-center">
+                <input type="number" name="bebida-cbrahma" id="qtd-bebida-cbrahma" data-price="12" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-cbrahma" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-clata">
+              <td>Cerveja lata</td>
+              <td class="text-center">
+                <input type="number" name="bebida-clata" id="qtd-bebida-clata" data-price="5" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-clata" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-clongneck">
+              <td>Cerveja Longneck</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="bebida-clongneck"
+                  id="qtd-bebida-clongneck"
+                  data-price="8"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-bebida-clongneck" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-c600">
+              <td>Cerveja 600</td>
+              <td class="text-center">
+                <input type="number" name="bebida-c600" id="qtd-bebida-c600" data-price="12" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-c600" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-rlata">
+              <td>Refrigerante lata</td>
+              <td class="text-center">
+                <input type="number" name="bebida-rlata" id="qtd-bebida-rlata" data-price="6" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-rlata" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-r600">
+              <td>Refrigerante 600</td>
+              <td class="text-center">
+                <input type="number" name="bebida-r600" id="qtd-bebida-r600" data-price="7" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-r600" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-rlitro">
+              <td>Refrigerante 1L</td>
+              <td class="text-center">
+                <input type="number" name="bebida-rlitro" id="qtd-bebida-rlitro" data-price="8" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-rlitro" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-r2litros">
+              <td>Refrigerante 2L</td>
+              <td class="text-center">
+                <input
+                  type="number"
+                  name="bebida-r2litros"
+                  id="qtd-bebida-r2litros"
+                  data-price="12"
+                  min="0"
+                  value="0"
+                />
+              </td>
+              <td id="subtotal-bebida-r2litros" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-scopo">
+              <td>Suco copo</td>
+              <td class="text-center">
+                <input type="number" name="bebida-scopo" id="qtd-bebida-scopo" data-price="8" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-scopo" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr id="row-bebida-sjarra">
+              <td>Suco jarra</td>
+              <td class="text-center">
+                <input type="number" name="bebida-sjarra" id="qtd-bebida-sjarra" data-price="12" min="0" value="0" />
+              </td>
+              <td id="subtotal-bebida-sjarra" class="text-right">R$ 0,00</td>
+            </tr>
+            <tr>
+              <th colspan="3">TOTAL</th>
+            </tr>
+            <tr>
+              <td class="text-right">Soma total da comanda</td>
+              <td id="total-comanda" colspan="2" class="text-right">R$ 0,00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn-group">
+          <button type="button" class="btn-submit">Fazer pedido</button>
+          <button type="button" class="btn-reset">Redefinir comanda</button>
+        </div>
+      </form>
+    </main>
+    <script type="text/javascript">
+      var inputs = document.querySelectorAll("input[type=number]");
+      var reset = document.querySelector(".btn-reset");
+      var submit = document.querySelector(".btn-submit");
+      var subtotalCells = document.querySelectorAll("td[id^=subtotal]");
+      var totalCell = document.querySelector("#total-comanda");
+
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].onchange = function (e) {
+          var total = 0;
+          var input = e.target;
+          var subtotalCell = document.querySelector("#subtotal-" + input.name);
+
+          subtotalCell.innerHTML = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(
+            input.dataset.price * input.value
+          );
+          var changedInputs = document.querySelectorAll("input[type=number]");
+
+          changedInputs.forEach(function (current) {
+            total += current.value * current.dataset.price;
+          });
+
+          totalCell.innerHTML = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(total);
+        };
+      }
+
+      reset.onclick = function () {
+        document.location.href = "./index.html";
+      };
+
+      submit.onclick = function () {
+        inputs.forEach(function (input) {
+          if (input.value == 0) {
+            document.querySelector("tr[id=row-" + input.name + "]").style.display = 'none';
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
