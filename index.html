@@ -11,7 +11,7 @@
         <table class="main-table">
           <thead>
             <th class="w-80">Pedido</th>
-            <th class="w-10 text-center">Quantidade</th>
+            <th class="w-10 text-center">Qtde.</th>
             <th class="w-10 text-center">Preço</th>
           </thead>
           <tbody>
@@ -368,6 +368,8 @@
 
       submit.onclick = function () {
         inputs.forEach(function (input) {
+          input.disabled = true;
+
           if (input.value == 0) {
             document.querySelector("tr[id=row-" + input.name + "]").style.display = 'none';
           }
